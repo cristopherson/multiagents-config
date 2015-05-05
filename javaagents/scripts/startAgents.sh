@@ -1,5 +1,6 @@
 #!/bin/bash
 
+filter=$1
 package=$( ls -t ../target/javaagents-*.jar | grep -v javadoc | grep -v sources | head -n1 )
 package=../target/MultiAgents.jar
 conf=conf/
@@ -37,4 +38,9 @@ echo "Starting agents: $conf"
 cd $conf
 
 echo $package
-java -ea -jar ../../$package
+if [ -z $filter ]
+then
+	java -ea -jar ../../$package
+else
+	java -ea -jar ../../$package | grep $filter
+fi
