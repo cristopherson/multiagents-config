@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <javaAgentsConfig>
   <agents>
-    <agent name="agentC1" entity="connectionA1" class="multiagents.SomeAgent" team="A"/>
+    <agent name="agentA1" entity="connectionA1" class="multiagents.SomeAgentExplorer" team="A"/>
+    <agent name="agentA7" entity="connectionA7" class="multiagents.SomeAgentRepairer" team="A"/>
+    <agent name="agentA13" entity="connectionA13" class="multiagents.SomeAgentSaboteur" team="A"/>
+    <agent name="agentA17" entity="connectionA17" class="multiagents.SomeAgentSentinel" team="A"/>
+    <agent name="agentA23" entity="connectionA23" class="multiagents.SomeAgentInspector" team="A"/>
   </agents>
 </javaAgentsConfig>
