@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<javaAgentsConfig>
+  <agents>
+    <agent name="agentC1" entity="connectionA1" class="multiagents.SomeAgent" team="A"/>
+  </agents>
+</javaAgentsConfig>
